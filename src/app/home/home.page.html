@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Ionic Login
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="ion-padding">
+    Welcome
+  </div>
+  <div>
+    <form>
+      <ion-item>
+        <lib-input [type]="'text'" [placeholder]="'User'" [content]="''">
+        </lib-input>
+      </ion-item>
+      <ion-item>
+        <lib-input [type]="'text'" [placeholder]="'Password'" [content]="''">
+        </lib-input>
+      </ion-item>
+    </form>
+    <lib-button [label]="'Submit'"></lib-button>
+  </div>
+</ion-content>
