@@ -5,8 +5,17 @@ ion-content {
 }
 
 div#content {
-  margin: 5%;
-  margin-top: 20%;
+  margin-top: 10%;
+  margin-left: 35%;
+  margin-right: 35%;
+}
+
+/** Mobile phones **/
+@media (min-width: 320px) and (max-width: 480px) {
+  div#content {
+    margin: 5%;
+    margin-top: 20%;
+  }
 }
 
 /* Laptop */
