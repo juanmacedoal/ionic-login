@@ -6,7 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
+  public recovery: string = 'Password Forgotten?';
+  public recoveryLink: string = 'Press here';
 
   constructor() {}
-
 }

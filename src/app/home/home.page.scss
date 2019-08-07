@@ -1,0 +1,46 @@
+@import 'variables';
+
+ion-content {
+  --ion-background-color: white;
+}
+
+div#content {
+  margin: 5%;
+  margin-top: 20%;
+}
+
+div#welcome {
+  color: #37b8bf;
+  font-family: cursive;
+  font-size: x-large;
+  text-align: center;
+  font-weight: 700;
+}
+
+form {
+  text-align: center;
+  ion-item {
+    margin-top: 4%;
+  }
+}
+
+div#button {
+  margin-top: 5%;
+  text-align: center;
+}
+
+div#recovery {
+  border-radius: 6px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(232, 235, 241);
+  color: cadetblue;
+  text-align: center;
+  margin-top: 3%;
+  text-align: center;
+  padding: 12px 8px 10px;
+
+  ion-label#link {
+    font-weight: 800;
+  }
+}

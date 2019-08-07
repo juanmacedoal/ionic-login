@@ -39,6 +39,9 @@
                 "input": "src/global.scss"
               }
             ],
+            "stylePreprocessorOptions": {
+              "includePaths": ["src/theme"]
+            },
             "scripts": []
           },
           "configurations": {
@@ -200,9 +203,7 @@
               "projects/presentation-components/tsconfig.lib.json",
               "projects/presentation-components/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
+            "exclude": ["**/node_modules/**"]
           }
         }
       }
