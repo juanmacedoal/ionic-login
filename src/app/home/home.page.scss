@@ -10,20 +10,47 @@ div#content {
   margin-right: 35%;
 }
 
-/** Mobile phones **/
-@media (min-width: 320px) and (max-width: 480px) {
+/* Monitor */
+@media screen and (min-width: 1920px) and (max-height: 969px) {
   div#content {
-    margin: 5%;
-    margin-top: 20%;
+    margin-top: 15%;
+    margin-left: 40%;
+    margin-right: 40%;
   }
 }
 
 /* Laptop */
-@media screen and (min-width: 1024px) and (max-height: 1310px) {
+@media screen and (min-width: 1024px) and (max-height: 768px) {
   div#content {
-    margin-top: 10%;
-    margin-left: 35%;
-    margin-right: 35%;
+    margin-top: 15%;
+    margin-left: 30%;
+    margin-right: 30%;
+  }
+}
+
+/* Tablet Vertical */
+@media screen and (max-width: 768px) {
+  div#content {
+    margin-top: 40%;
+    margin-left: 30%;
+    margin-right: 30%;
+  }
+}
+
+/** Tablet Horizontal Position**/
+@media only screen and (min-width: 1024px) {
+  div#content {
+    margin-top: 15%;
+    margin-left: 30%;
+    margin-right: 30%;
+  }
+}
+
+/** Mobile phones **/
+@media (min-width: 320px) and (max-width: 480px) {
+  div#content {
+    margin: 6%;
+    margin-top: 30%;
   }
 }
 
@@ -53,6 +80,7 @@ div#recovery {
   border-style: solid;
   border-color: rgb(232, 235, 241);
   color: cadetblue;
+  cursor: pointer;
   text-align: center;
   margin-top: 3%;
   text-align: center;
@@ -61,4 +89,14 @@ div#recovery {
   ion-label#link {
     font-weight: 800;
   }
+}
+
+div#register {
+  color: cadetblue;
+  text-align: center;
+  position: relative;
+  margin-top: 20%;
+  text-align: center;
+  padding: 2%;
+  cursor: pointer;
 }

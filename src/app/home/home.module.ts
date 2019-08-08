@@ -1,3 +1,4 @@
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { IonicModule } from '@ionic/angular';
@@ -15,6 +16,7 @@ import { ButtonModule } from 'projects/presentation-components/src/lib/button/bu
     IonicModule,
     InputModule,
     ButtonModule,
+    HttpClientModule,
     RouterModule.forChild([
       {
         path: '',
