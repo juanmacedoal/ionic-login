@@ -4,18 +4,28 @@
       Welcome
     </div>
     <div id="form">
-      <form>
+      <form [formGroup]="loginForm">
         <ion-item>
-          <lib-input [type]="'text'" [placeholder]="'User'" [content]="''">
+          <lib-input
+            formControlName="user"
+            [type]="'text'"
+            [placeholder]="'User'"
+            [content]="''"
+          >
           </lib-input>
         </ion-item>
         <ion-item>
-          <lib-input [type]="'text'" [placeholder]="'Password'" [content]="''">
+          <lib-input
+            formControlName="password"
+            [type]="'password'"
+            [placeholder]="'Password'"
+            [content]="''"
+          >
           </lib-input>
         </ion-item>
       </form>
       <div id="button">
-        <lib-button [label]="'Log in'"></lib-button>
+        <lib-button [label]="'Log in'" (click)="login()"></lib-button>
       </div>
     </div>
     <div id="recovery">
