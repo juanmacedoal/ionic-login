@@ -4,6 +4,7 @@ import {
   Input,
   EventEmitter,
   Output,
+  forwardRef,
 } from '@angular/core';
 import {
   ControlValueAccessor,
@@ -17,8 +18,15 @@ const noop = () => {};
   selector: 'lib-input',
   templateUrl: './input.component.html',
   styleUrls: ['./input.component.scss'],
+  providers: [
+    {
+      provide: NG_VALUE_ACCESSOR,
+      useExisting: forwardRef(() => InputComponent),
+      multi: true,
+    },
+  ],
 })
-export class InputComponent implements OnInit {
+export class InputComponent implements OnInit, ControlValueAccessor {
   @Input() id: string = 'input';
   @Input() label: string;
   @Input() content: string = 'input_component';
