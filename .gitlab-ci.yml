@@ -1,6 +1,13 @@
 before_script:
-    - echo Instalando
-    
+      - echo Entered the install phase ..
+      - apt-get update -y
+      - apt-get install -y software-properties-common
+      - apt-add-repository ppa:git-core/ppa
+      - apt-get update -y
+      - apt-get install -y git
+      - git --version
+      - ls -la
+      - npm install
 build:
   script:
     - npm run build
