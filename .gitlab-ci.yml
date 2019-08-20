@@ -1,2 +1,6 @@
 before_script:
     - echo Instalando
+    
+build:
+  script:
+    - npm run build
