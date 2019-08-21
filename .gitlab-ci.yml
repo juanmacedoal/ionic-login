@@ -12,19 +12,20 @@ cache:
 install_dependencies:
   stage: install
   script:
+    - echo Entered the install phase ..
     - npm install
-    - npm install -g angular-cli-ghpages
   artifacts:
     paths:
       - node_modules/
 build:
   stage: build
   script:
-    - echo Entered the install phase ..
+    - echo Entered the build phase ..
     - npm run gh-build
     
 deploy:
   stage: deploy
   script:
-    - echo Entered the install phase ..
+    - echo Entered the deploy phase ..
+    - npm install -g angular-cli-ghpages
     - npm run gh-deploy
