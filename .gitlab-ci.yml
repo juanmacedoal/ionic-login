@@ -1,13 +1,13 @@
 before_script:
       - echo Entered the install phase ..
-      - apt-get update -y
-      - apt-get install -y software-properties-common
-      - apt-add-repository ppa:git-core/ppa
-      - apt-get update -y
-      - apt-get install -y git
-      - git --version
-      - ls -la
       - npm install
+      - git checkout
 build:
   script:
-    - npm run build
+    - echo Entered the install phase ..
+    - npm run gh-build
+    
+deploy:
+  script:
+    - echo Entered the install phase ..
+    - npm run gh-deploy
