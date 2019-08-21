@@ -1,22 +1,29 @@
+image: node:latest
+
 stages:
   - install
   - build
   - deploy
 
-install:
-    stage: install
-    script:
-      - echo Entered the install phase ..
-      - npm install
-      - git checkout
+cache:
+  paths:
+    - node_modules/
+
+install_dependencies:
+  stage: build
+  script:
+    - npm install
+  artifacts:
+    paths:
+      - node_modules/
 build:
-    stage: build
-    script:
-      - echo Entered the install phase ..
-      - npm run gh-build
+  stage: build
+  script:
+    - echo Entered the install phase ..
+    - npm run gh-build
     
 deploy:
-    stage: deploy
-    script:
-      - echo Entered the install phase ..
-      - npm run gh-deploy
+  stage: deploy
+  script:
+    - echo Entered the install phase ..
+    - npm run gh-deploy
