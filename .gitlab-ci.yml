@@ -1,13 +1,19 @@
-before_script:
+stages:
+  - install
+  - build
+  - deploy
+
+install:
+    script:
       - echo Entered the install phase ..
       - npm install
       - git checkout
 build:
-  script:
-    - echo Entered the install phase ..
-    - npm run gh-build
+    script:
+      - echo Entered the install phase ..
+      - npm run gh-build
     
 deploy:
-  script:
-    - echo Entered the install phase ..
-    - npm run gh-deploy
+    script:
+      - echo Entered the install phase ..
+      - npm run gh-deploy
