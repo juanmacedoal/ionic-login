@@ -13,6 +13,7 @@ install_dependencies:
   stage: install
   script:
     - npm install
+    - npm install -g angular-cli-ghpages
   artifacts:
     paths:
       - node_modules/
