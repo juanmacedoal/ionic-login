@@ -28,4 +28,5 @@ deploy:
   script:
     - echo Entered the deploy phase ..
     - npm install -g angular-cli-ghpages
+    - npm run build
     - npm run gh-deploy
