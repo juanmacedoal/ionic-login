@@ -7,8 +7,8 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "gh-build": "ng build --prod --base-href \"https://juanmacedoal.github.io/ionic-login/\"",
-    "gh-deploy": "ngh --dir www",
+    "gh-build": "ng build --prod --base-href \"https://juanmacedoal.github.io/ionic-login/home\"",
+    "gh-deploy": "ngh --dir=www/",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
