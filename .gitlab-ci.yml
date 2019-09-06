@@ -21,12 +21,12 @@ build:
   stage: build
   script:
     - echo Entered the build phase ..
-    - npm run gh-build
+    - npm run build
     
 deploy:
   stage: deploy
   script:
     - echo Entered the deploy phase ..
     - npm install -g angular-cli-ghpages
-    - npm run build
+    - npm run gh-build
     - npm run gh-deploy
