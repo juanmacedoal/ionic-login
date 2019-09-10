@@ -7,6 +7,8 @@
       <form [formGroup]="loginForm">
         <ion-item>
           <lib-input
+            id="user"
+            name="user"
             formControlName="user"
             [type]="'text'"
             [placeholder]="'User'"
@@ -16,6 +18,8 @@
         </ion-item>
         <ion-item>
           <lib-input
+            id="password"
+            name="password"
             formControlName="password"
             [type]="'password'"
             [placeholder]="'Password'"

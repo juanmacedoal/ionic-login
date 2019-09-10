@@ -29,6 +29,7 @@ const noop = () => {};
 export class InputComponent implements OnInit, ControlValueAccessor {
   @Input() id: string = 'input';
   @Input() label: string;
+  @Input() name: string;
   @Input() content: string = 'input_component';
   @Input() placeholder: string;
   @Input() disabled: boolean = false;

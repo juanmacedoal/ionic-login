@@ -1,14 +1,15 @@
 <div>
   <ion-label>
-            {{ label }}
-            <span *ngIf="required">*</span>
+    {{ label }}
+    <span *ngIf="required">*</span>
   </ion-label>
   <ion-input
-    type="{{type}}"
-    placeholder="{{placeholder}}"
-    attr.maxlength="{{maxlength}}"
-    id="{{id}}"
-    disabled="{{disabled}}"
+    name="{{ name }}"
+    type="{{ type }}"
+    placeholder="{{ placeholder }}"
+    attr.maxlength="{{ maxlength }}"
+    id="{{ id }}"
+    disabled="{{ disabled }}"
     [(ngModel)]="value"
     (blur)="onBlur()"
   ></ion-input>

@@ -43,8 +43,12 @@ export class HomePage implements OnInit {
         this.loginForm.get('user').value,
         this.loginForm.get('password').value
       )
-      .subscribe(() => {
-        this._router.navigateByUrl('dashboard');
+      .subscribe(result => {
+        if (result) {
+          this._router.navigateByUrl('dashboard');
+        } else {
+          alert('Wrong login');
+        }
       });
   }
 }

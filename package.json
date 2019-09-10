@@ -11,7 +11,7 @@
     "gh-deploy": "ngh --dir=www/",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "watch \"ng e2e --port 4300\" e2e/src --wait=1"
   },
   "private": true,
   "dependencies": {
