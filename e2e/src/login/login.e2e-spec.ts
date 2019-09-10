@@ -13,8 +13,8 @@ describe('protractor-tutorial - Login page', () => {
     expect(page.getWelcomeTitle()).toEqual('Welcome');
   });
 
-  it('When login is successful — he should go to DashboardPage', () => {
-    page.testLogin('user', 'password');
+  it('When login is successful — he should go to DashboardPage', async () => {
+    await page.testLogin('user', 'password');
     browser.driver.wait(function() {
       return browser.driver.getCurrentUrl().then(url => {
         return /dashboard/.test(url);

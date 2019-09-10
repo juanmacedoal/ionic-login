@@ -2,7 +2,7 @@ import { browser, by, element } from 'protractor';
 
 export class LoginPage {
   navigate() {
-    return browser.get('/home');
+    return browser.get('/auth/login');
   }
 
   getWelcomeTitle() {
