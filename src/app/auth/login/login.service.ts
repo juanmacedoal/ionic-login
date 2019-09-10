@@ -1,21 +1,21 @@
 import { Injectable } from '@angular/core';
-import { Observable, of } from 'rxjs';
+import { of } from 'rxjs';
 
 /**
  *
  *
  * @export
- * @class HomeService
+ * @class LoginService
  */
 @Injectable({
   providedIn: 'root',
 })
-export class HomeService {
+export class LoginService {
   private logIn: boolean = false;
 
   /**
-   *Creates an instance of HomeService.
-   * @memberof HomeService
+   *Creates an instance of LoginService.
+   * @memberof LoginService
    */
   constructor() {}
 
@@ -23,7 +23,7 @@ export class HomeService {
    *
    *
    * @returns
-   * @memberof HomeService
+   * @memberof LoginService
    */
   isAuthenticated() {
     return this.logIn;
@@ -35,7 +35,7 @@ export class HomeService {
    * @param {string} user
    * @param {string} password
    * @returns
-   * @memberof HomeService
+   * @memberof LoginService
    */
   login(user: string, password: string) {
     if (user === 'user' && password === 'password') {
@@ -48,7 +48,7 @@ export class HomeService {
   /**
    *
    *
-   * @memberof HomeService
+   * @memberof LoginService
    */
   logOut() {
     this.logIn = false;
