@@ -30,7 +30,7 @@
     "@ionic/ng-toolkit": "^1.0.8",
     "@webcomponents/webcomponentsjs": "^2.2.10",
     "core-js": "^2.5.4",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "font-awesome": "^4.7.0",
     "rxjs": "~6.5.1",
     "tslib": "^1.9.0",
